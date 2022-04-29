@@ -1,0 +1,37 @@
+{
+    "name": "frontee-boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "mix",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production",
+        "lint": "npx stylelint './resources/scss/**/*.scss'",
+        "lint-fix": "npx stylelint './resources/scss/**/*.scss' --fix",
+        "ssg": "npm run prod && php please ssg:generate"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.27.9",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "laravel-mix": "^6.0.43",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.51.0",
+        "sass-loader": "^12.1.0",
+        "stylelint": "^14.8.0",
+        "stylelint-config-standard-scss": "^3.0.0",
+        "ts-loader": "^9.2.9",
+        "typescript": "^4.6.4"
+    },
+    "dependencies": {
+        "laravel-mix-purgecss": "^6.0.0",
+        "stylelint-selector-bem-pattern": "^2.1.1"
+    }
+}

@@ -1,0 +1,1 @@
+(self.webpackChunkfrontee_boilerplate=self.webpackChunkfrontee_boilerplate||[]).push([[773],{807:()=>{console.log("Your typescript is working")},489:()=>{}},e=>{var o=o=>e(e.s=o);e.O(0,[33],(()=>(o(807),o(489))));e.O()}]);
