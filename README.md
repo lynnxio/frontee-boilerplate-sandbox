@@ -1,5 +1,7 @@
 # Frontee Boilerplate + Statamic
 
+![Imgur](https://i.imgur.com/JmHBCwL.png)
+
 Complete boilerplate for front-end development.
 
 - [Frontee Boilerplate + Statamic](#frontee-boilerplate--statamic)
