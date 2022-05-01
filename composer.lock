@@ -4466,21 +4466,21 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.3.9",
+            "version": "v3.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "0cc66c57404fd684ea72926d86a9b590a4ee4dce"
+                "reference": "e9fb2358aa45bc63f6aa386c42c4f84878c569b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/0cc66c57404fd684ea72926d86a9b590a4ee4dce",
-                "reference": "0cc66c57404fd684ea72926d86a9b590a4ee4dce",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/e9fb2358aa45bc63f6aa386c42c4f84878c569b0",
+                "reference": "e9fb2358aa45bc63f6aa386c42c4f84878c569b0",
                 "shasum": ""
             },
             "require": {
                 "ajthinking/archetype": "^1.0.3",
-                "composer/composer": "^1.10.22 || ^2.0.13",
+                "composer/composer": "^1.10.22 || ^2.2.12",
                 "ext-json": "*",
                 "facade/ignition-contracts": "^1.0",
                 "guzzlehttp/guzzle": "^6.3 || ^7.0",
@@ -4553,7 +4553,7 @@
             ],
             "support": {
                 "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.3.9"
+                "source": "https://github.com/statamic/cms/tree/v3.3.10"
             },
             "funding": [
                 {
@@ -4561,7 +4561,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-21T15:03:00+00:00"
+            "time": "2022-04-29T20:02:31+00:00"
         },
         {
             "name": "statamic/ssg",
