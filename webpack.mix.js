@@ -12,46 +12,32 @@ require('laravel-mix-purgecss');
  */
 mix.ts('resources/ts/app.ts', 'public/js')
     .sass('resources/sass/styles.scss', 'public/css')
-    .webpackConfig({
-        module: {
-            rules: [{
-                test: /\.tsx?$/,
-                loader: "ts-loader",
-                exclude: /node_modules/
-            }]
-        },
-        resolve: {
-            extensions: ["*", ".js", ".jsx", ".vue", ".ts", ".tsx"]
+    .browserSync({
+        host: '192.68.56.10',
+        port: 3000,
+        proxy: 'http://yourdomain.test',
+        files: [
+            './resources/views/**/*.antlers.html',
+            './resources/sass/**/*.scss',
+            './resources/ts/**/*.ts'
+        ],
+        open: false,
+        watchOptions: {
+            usePolling: true,
+            interval: 100,
+            ignored: /node_modules/,
+            processCssUrls: false,
         }
     })
-    .purgeCss({
+
+if (mix.inProduction()) {
+    mix.version().extract().purgeCss({
         extend: {
             content: [
                 "resources/views/**/*.antlers.html",
             ],
         },
     })
-mix.browserSync({
-    host: '192.68.56.10',
-    port: 3000,
-    proxy: 'http://yourdomain.test',
-    files: [
-        './resources/views/**/*.antlers.html',
-        './resources/sass/**/*.scss',
-        './resources/ts/**/*.ts'
-    ],
-    open: false,
-    watchOptions: {
-        usePolling: true,
-        interval: 100,
-        ignored: /node_modules/,
-        processCssUrls: false,
-    }
-})
-
-if (mix.inProduction()) {
-    mix.version()
-        .extract()
 }
 
 /*
